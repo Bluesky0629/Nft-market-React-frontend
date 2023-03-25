@@ -1,0 +1,88 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  letter-spacing: normal !important;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: #eee;
+  color: $black-color;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+// Prevent highlight on mobile
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: darken($link-color, 5%);
+    text-decoration: none;
+  }
+}
+
+label {
+  font-size: 14px;
+  line-height: 1.42857;
+  color: $checkboxes-text-color;
+  font-weight: 400;
+}
+
+
+#wallet-modal , .ant-modal-footer{
+  display: none;
+}
+
+
+#wallet-modal .ant-modal{
+  background-color: #202247;
+}
+
+.wallet-btn{
+  height: auto;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border: #6b3668 solid 1px;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.close-btn{
+  color: white;
+  text-align: right;
+  margin-left: 250px;
+  margin-bottom: 10px;
+  border: #6b3668 solid 1px;
+  border-radius: 3rem;
+}
+
+
